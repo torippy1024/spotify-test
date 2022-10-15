@@ -1,15 +1,11 @@
 import { Link } from "react-router-dom";
 import { AiOutlineDown, AiOutlineMenu } from "react-icons/ai";
 
-type HeaderType = {
-  signOut:  (() => void) | undefined;
-};
-
 type MenuType = {
   horizontal: boolean;
 };
 
-const Header = ({signOut}: HeaderType) => {
+const Header = () => {
   const Menu = ({horizontal}: MenuType) => 
     <ul className={`menu ${horizontal ? "menu-horizontal" : "bg-base-200"} p-0`}>
       <li><Link to="/">hoge1</Link></li>

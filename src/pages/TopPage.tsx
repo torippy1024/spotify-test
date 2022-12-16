@@ -5,10 +5,10 @@ import SpotifyEmbedded from "../components/SpotifyEmbedded";
 
 const TopPage = () => {
   return  (
-      <div data-theme="light" className="flex flex-col min-h-screen">
+      <div data-theme="dark" className="flex flex-col min-h-screen">
       <Header />
       <div className="grow container mx-auto my-4 px-4">
-        <SpotifyEmbedded id="2uOu92n9vW1yHir6Na8vpM" darkTheme={true} />
+        <SpotifyEmbedded id="2uOu92n9vW1yHir6Na8vpM" />
       </div>
       <Footer />
     </div>
